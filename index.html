@@ -4,14 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Conference Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Sans:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
 <header class="app-header">
   <div class="brand">
-    <span class="brand-title" data-i18n="app.title">Трекер конференций</span>
-    <span class="brand-sub" data-i18n="app.subtitle">Конференции и научные работы</span>
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 32 24" width="28" height="21" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+        <path d="M2 17 H30" stroke-opacity="0.55" />
+        <path d="M5 17 C10 4, 22 4, 27 17" />
+        <circle cx="16" cy="9.2" r="1.4" fill="currentColor" stroke="none" />
+      </svg>
+    </span>
+    <span class="brand-text">
+      <span class="brand-title" data-i18n="app.title">Трекер конференций</span>
+      <span class="brand-sub" data-i18n="app.subtitle">Конференции и научные работы</span>
+    </span>
   </div>
   <div class="header-actions">
     <input id="search" class="search" type="search" data-i18n-ph="search.placeholder" />
@@ -23,12 +35,12 @@
   </div>
 </header>
 
-<nav class="tabs">
-  <button class="tab-btn active" data-tab="future" data-i18n="tab.future">Будущие</button>
-  <button class="tab-btn" data-tab="now" data-i18n="tab.now">Сейчас идут</button>
-  <button class="tab-btn" data-tab="past" data-i18n="tab.past">Прошедшие</button>
-  <button class="tab-btn" data-tab="papers" data-i18n="tab.papers">Статьи</button>
-  <button class="tab-btn" data-tab="calendar" data-i18n="tab.calendar">Календарь</button>
+<nav class="tabs" role="tablist">
+  <button class="tab-btn active" data-tab="future" role="tab"><span data-i18n="tab.future">Будущие</span><span class="tab-count" data-count="future">0</span></button>
+  <button class="tab-btn" data-tab="now" role="tab"><span class="live-dot" aria-hidden="true"></span><span data-i18n="tab.now">Сейчас идут</span><span class="tab-count tab-count--live" data-count="now">0</span></button>
+  <button class="tab-btn" data-tab="past" role="tab"><span data-i18n="tab.past">Прошедшие</span><span class="tab-count" data-count="past">0</span></button>
+  <button class="tab-btn" data-tab="papers" role="tab"><span data-i18n="tab.papers">Статьи</span><span class="tab-count" data-count="papers">0</span></button>
+  <button class="tab-btn" data-tab="calendar" role="tab"><span data-i18n="tab.calendar">Календарь</span></button>
 </nav>
 
 <div id="pastFilters" class="filters" hidden>

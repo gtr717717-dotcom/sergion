@@ -27,6 +27,7 @@
       'search.placeholder': 'Поиск…',
 
       'now.studies': 'Идущие исследования',
+      'now.banner': 'Идёт сейчас',
 
       'empty.future': 'Нет будущих конференций.',
       'empty.now': 'Сейчас ничего не идёт.',
@@ -149,6 +150,7 @@
       'search.placeholder': 'Search…',
 
       'now.studies': 'Ongoing studies',
+      'now.banner': 'Happening now',
 
       'empty.future': 'No upcoming conferences.',
       'empty.now': 'Nothing is happening now.',

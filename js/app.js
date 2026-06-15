@@ -84,6 +84,8 @@
     var liveConf = sortItems(window.Store.now().filter(matches));
     var liveStudies = window.Store.activeStudies().filter(matches);
     var nowNodes = [];
+    var liveTotal = liveConf.length + liveStudies.length;
+    if (liveTotal) nowNodes.push(R.nowBanner(T('now.banner') + ' · ' + liveTotal));
     if (liveConf.length) nowNodes.push(R.grid(liveConf.map(R.card)));
     if (liveStudies.length) {
       nowNodes.push(R.subhead(T('now.studies')));
@@ -103,6 +105,17 @@
 
     // calendar
     if (state.tab === 'calendar') window.Calendar.render(document.getElementById('tab-calendar'));
+
+    // tab counts
+    updateCount('future', fut.length);
+    updateCount('now', liveConf.length + liveStudies.length);
+    updateCount('past', window.Store.past().length);
+    updateCount('papers', papers.length);
+  }
+
+  function updateCount(key, n) {
+    var el = document.querySelector('.tab-count[data-count="' + key + '"]');
+    if (el) { el.textContent = n; el.classList.toggle('is-zero', !n); }
   }
 
   /* ---------- tabs ---------- */

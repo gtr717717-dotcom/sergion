@@ -190,24 +190,37 @@
     return body;
   }
 
+  function chip(label, kind, mod) {
+    return el('span', { class: 'chip' + (kind ? ' chip--' + kind : '') + (mod ? ' is-' + mod : ''), text: label });
+  }
+
   function makeCard(c, opts) {
     opts = opts || {};
-    var card = el('div', { class: 'card', 'data-format': opts.format || c.format || 'offline', 'data-id': c.id });
+    var fmt = opts.format || c.format || 'offline';
+    var card = el('div', { class: 'card ' + (opts.cardClass || 'conf-card'), 'data-format': fmt, 'data-id': c.id });
+    card.appendChild(el('div', { class: 'strip', 'aria-hidden': 'true' }));
+    var inner = el('div', { class: 'card-inner' });
     var header = el('div', { class: 'card-head' });
     var badge = el('span', { class: 'badge badge-' + c.type, text: T('badge.' + c.type) });
     var ph = window.Store.phase(c);
-    var meta = el('div', { class: 'card-meta' }, opts.metaLines.map(function (line) {
+    var top = el('div', { class: 'card-top' }, [badge, el('span', { class: 'phase phase-' + ph, text: T('phase.' + ph) })]);
+    var titleEl = el('h3', { class: 'card-title', text: c.title });
+    var meta = el('div', { class: 'card-meta' }, (opts.metaLines || []).map(function (line) {
       return el('div', { class: 'meta-line', text: line });
     }));
-    var titleEl = el('h3', { class: 'card-title', text: c.title });
-    var top = el('div', { class: 'card-top' }, [badge, el('span', { class: 'phase phase-' + ph, text: T('phase.' + ph) })]);
     header.appendChild(top);
     header.appendChild(titleEl);
     header.appendChild(meta);
-    // quick attendance preview on conference header (collapsed)
+    if (opts.chips && opts.chips.length) header.appendChild(el('div', { class: 'chips' }, opts.chips));
+    header.setAttribute('role', 'button');
+    header.setAttribute('tabindex', '0');
     header.addEventListener('click', function () { card.classList.toggle('open'); });
-    card.appendChild(header);
-    card.appendChild(expandBody(c));
+    header.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.classList.toggle('open'); }
+    });
+    inner.appendChild(header);
+    inner.appendChild(expandBody(c));
+    card.appendChild(inner);
     return card;
   }
 
@@ -216,8 +229,9 @@
     if (c.dateStart) lines.push(fmtRange(c.dateStart, c.dateEnd));
     var loc = [c.city, c.country].filter(Boolean).join(', ');
     if (loc) lines.push(loc);
-    lines.push(T('format.' + c.format) + (c.language ? ' · ' + c.language : ''));
-    return makeCard(c, { metaLines: lines });
+    var chips = [chip(T('format.' + c.format), 'format', c.format)];
+    if (c.language) chips.push(chip(c.language.toUpperCase(), 'lang'));
+    return makeCard(c, { metaLines: lines, chips: chips });
   }
 
   function paperCard(c) {
@@ -225,19 +239,22 @@
     if (c.authors) lines.push(c.authors);
     var jl = [c.journal, c.year].filter(Boolean).join(' · ');
     if (jl) lines.push(jl);
-    if (c.doi) lines.push('DOI: ' + c.doi);
-    return makeCard(c, { metaLines: lines, format: 'paper' });
+    var chips = [];
+    if (c.year) chips.push(chip(c.year, 'lang'));
+    if (c.doi) chips.push(chip('DOI', 'lang'));
+    return makeCard(c, { metaLines: lines, chips: chips, format: 'paper', cardClass: 'paper-card' });
   }
 
   function studyCard(c) {
     var lines = [];
-    if (c.sponsor) lines.push(T('field.sponsor') + ': ' + c.sponsor);
-    var pf = [c.phase, c.studyStatus ? T('field.studyStatus') + ': ' + c.studyStatus : ''].filter(Boolean).join(' · ');
-    if (pf) lines.push(pf);
+    if (c.sponsor) lines.push(c.sponsor);
     var dr = fmtRange(c.dateStart, c.dateCompletion);
     if (dr) lines.push(dr);
     if (c.nct) lines.push(c.nct);
-    return makeCard(c, { metaLines: lines, format: 'study' });
+    var chips = [];
+    if (c.phase && c.phase !== 'N/A') chips.push(chip(c.phase, 'lang'));
+    if (c.studyStatus) chips.push(chip(c.studyStatus.toUpperCase(), 'format', 'study'));
+    return makeCard(c, { metaLines: lines, chips: chips, format: 'study', cardClass: 'study-card' });
   }
 
   function grid(cards) {
@@ -268,11 +285,17 @@
       tr.addEventListener('click', function () { window.Modal && window.Modal.open(c.id); });
       return tr;
     }));
-    return el('table', { class: 'tbl' }, [thead, body]);
+    return el('div', { class: 'tbl-scroll' }, [el('table', { class: 'tbl' }, [thead, body])]);
   }
 
   function banner(text) {
     return el('div', { class: 'banner', text: text });
+  }
+  function nowBanner(text) {
+    return el('div', { class: 'now-banner' }, [
+      el('span', { class: 'live-dot', 'aria-hidden': 'true' }),
+      el('span', { class: 'now-banner-text', text: text })
+    ]);
   }
   function empty(text) {
     return el('div', { class: 'empty', text: text });
@@ -283,6 +306,6 @@
 
   window.Render = {
     card: card, paperCard: paperCard, studyCard: studyCard,
-    grid: grid, table: table, banner: banner, empty: empty, subhead: subhead
+    grid: grid, table: table, banner: banner, nowBanner: nowBanner, empty: empty, subhead: subhead
   };
 })();
