@@ -5,7 +5,7 @@ on:
     types: [update-data]
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * 1'   # every Monday 06:00 UTC
+    - cron: '0 6 * * *'   # каждый день 06:00 UTC (09:00 МСК)
 
 permissions:
   contents: write
@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: claude/brave-gates-v85zxf
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -35,6 +37,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "chore: refresh import-data.js"
-            git push
+            git commit -m "chore: refresh import-data.js (scheduled)"
+            git push origin HEAD:claude/brave-gates-v85zxf
           fi
