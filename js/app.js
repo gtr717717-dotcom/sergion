@@ -181,6 +181,15 @@
       if (res && (res.added || res.updated)) toast(T('toast.imported'));
     }
 
+    // auto-pull personal data on load if sync is already configured on this device
+    // (enter token + Gist ID once; afterwards every visit restores the latest silently)
+    if (window.Sync) {
+      var sc = window.Sync.cfg();
+      if (sc.token && sc.gistId) {
+        window.Sync.pull().then(function () { refreshAll(); }).catch(function () {});
+      }
+    }
+
     // wire tabs
     document.querySelectorAll('.tab-btn').forEach(function (b) {
       b.addEventListener('click', function () { setTab(b.getAttribute('data-tab')); refreshAll(); });
