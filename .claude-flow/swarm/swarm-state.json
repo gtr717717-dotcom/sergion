@@ -1,0 +1,24 @@
+{
+  "swarms": {
+    "swarm-1781520819849-yesfy3": {
+      "swarmId": "swarm-1781520819849-yesfy3",
+      "topology": "hierarchical-mesh",
+      "maxAgents": 15,
+      "status": "running",
+      "agents": [],
+      "tasks": [],
+      "config": {
+        "topology": "hierarchical-mesh",
+        "maxAgents": 15,
+        "strategy": "specialized",
+        "communicationProtocol": "message-bus",
+        "autoScaling": true,
+        "consensusMechanism": "majority"
+      },
+      "createdAt": "2026-06-15T10:53:39.849Z",
+      "updatedAt": "2026-06-15T10:53:39.849Z",
+      "pid": 2474
+    }
+  },
+  "version": "3.0.0"
+}
