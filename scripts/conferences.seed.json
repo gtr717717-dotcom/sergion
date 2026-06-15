@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "aans-annual",
+    "title": "AANS Annual Scientific Meeting",
+    "month": 4, "day": 25, "days": 4,
+    "city": "", "country": "USA",
+    "format": "hybrid", "language": "en",
+    "site": "https://www.aans.org/",
+    "descRu": "Ежегодное собрание Американской ассоциации нейрохирургов.",
+    "tags": ["neurosurgery", "aans"]
+  },
+  {
+    "slug": "eans-congress",
+    "title": "EANS Annual Congress",
+    "month": 9, "day": 20, "days": 4,
+    "city": "", "country": "Europe",
+    "format": "offline", "language": "en",
+    "site": "https://www.eans.org/",
+    "descRu": "Конгресс Европейской ассоциации нейрохирургических обществ.",
+    "tags": ["neurosurgery", "eans"]
+  },
+  {
+    "slug": "cns-annual",
+    "title": "CNS Annual Meeting",
+    "month": 10, "day": 5, "days": 5,
+    "city": "", "country": "USA",
+    "format": "hybrid", "language": "en",
+    "site": "https://www.cns.org/",
+    "descRu": "Ежегодное собрание Конгресса нейрохирургов (CNS).",
+    "tags": ["neurosurgery", "cns"]
+  },
+  {
+    "slug": "wfns-congress",
+    "title": "WFNS World Congress of Neurosurgery",
+    "month": 9, "day": 1, "days": 5,
+    "city": "", "country": "International",
+    "format": "offline", "language": "en",
+    "site": "https://www.wfns.org/",
+    "descRu": "Всемирный конгресс нейрохирургии (WFNS).",
+    "tags": ["neurosurgery", "wfns"]
+  },
+  {
+    "slug": "polenov-readings",
+    "title": "Поленовские чтения",
+    "month": 4, "day": 15, "days": 3,
+    "city": "Санкт-Петербург", "country": "Россия",
+    "format": "offline", "language": "ru",
+    "site": "https://www.almazovcentre.ru/",
+    "descRu": "Всероссийская научно-практическая конференция по нейрохирургии.",
+    "tags": ["neurosurgery", "russia"]
+  },
+  {
+    "slug": "wcyns",
+    "title": "WCYNS — World Congress of Young Neurosurgeons",
+    "month": 11, "day": 10, "days": 3,
+    "city": "", "country": "International",
+    "format": "hybrid", "language": "en",
+    "site": "https://www.wfns.org/",
+    "descRu": "Всемирный конгресс молодых нейрохирургов.",
+    "tags": ["neurosurgery", "young"]
+  }
+]

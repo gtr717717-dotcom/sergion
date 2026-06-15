@@ -1,118 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sergion — Build Something Great</title>
-  <meta name="description" content="Sergion helps teams ship faster with modern tools and workflows designed for the way you work." />
+  <title>Conference Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Sans:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Sergion</a>
-    <button class="nav-toggle" aria-label="Toggle navigation">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
-    </ul>
+<header class="app-header">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 32 24" width="28" height="21" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+        <path d="M2 17 H30" stroke-opacity="0.55" />
+        <path d="M5 17 C10 4, 22 4, 27 17" />
+        <circle cx="16" cy="9.2" r="1.4" fill="currentColor" stroke="none" />
+      </svg>
+    </span>
+    <span class="brand-text">
+      <span class="brand-title" data-i18n="app.title">Трекер конференций</span>
+      <span class="brand-sub" data-i18n="app.subtitle">Конференции и научные работы</span>
+    </span>
   </div>
+  <div class="header-actions">
+    <input id="search" class="search" type="search" data-i18n-ph="search.placeholder" />
+    <button id="addBtn" class="btn" data-i18n="btn.add">+ Добавить</button>
+    <button id="updateBtn" class="btn" data-i18n="btn.update">⟳ Обновить базу</button>
+    <button id="syncBtn" class="btn" data-i18n="btn.sync">☁ Синхронизация</button>
+    <button id="themeBtn" class="btn" data-i18n="btn.theme">Тема</button>
+    <button id="langBtn" class="btn">EN</button>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button class="tab-btn active" data-tab="future" role="tab"><span data-i18n="tab.future">Будущие</span><span class="tab-count" data-count="future">0</span></button>
+  <button class="tab-btn" data-tab="now" role="tab"><span class="live-dot" aria-hidden="true"></span><span data-i18n="tab.now">Сейчас идут</span><span class="tab-count tab-count--live" data-count="now">0</span></button>
+  <button class="tab-btn" data-tab="past" role="tab"><span data-i18n="tab.past">Прошедшие</span><span class="tab-count" data-count="past">0</span></button>
+  <button class="tab-btn" data-tab="papers" role="tab"><span data-i18n="tab.papers">Статьи</span><span class="tab-count" data-count="papers">0</span></button>
+  <button class="tab-btn" data-tab="calendar" role="tab"><span data-i18n="tab.calendar">Календарь</span></button>
 </nav>
 
-<!-- Hero -->
-<section class="hero">
-  <h1>Build products your<br><span>users will love</span></h1>
-  <p>Sergion gives your team the modern tools and workflows to design, build, and ship faster — without the complexity.</p>
-  <div class="hero-actions">
-    <a href="contact.html" class="btn btn-primary">Get Started Free</a>
-    <a href="about.html" class="btn btn-secondary">Learn More</a>
-  </div>
-</section>
+<div id="pastFilters" class="filters" hidden>
+  <select id="pastFormat"></select>
+  <select id="pastAtt"></select>
+  <select id="pastTag"></select>
+  <select id="pastSort">
+    <option value="date" data-i18n="filter.sortDate">По дате</option>
+    <option value="rating" data-i18n="filter.sortRating">По оценке</option>
+    <option value="title" data-i18n="filter.sortTitle">По названию</option>
+  </select>
+</div>
 
-<!-- Features -->
-<section class="features">
-  <div class="container">
-    <h2>Everything you need to ship</h2>
-    <div class="feature-grid">
-      <div class="feature-card">
-        <div class="feature-icon">⚡</div>
-        <h3>Lightning Fast</h3>
-        <p>Optimized from the ground up so your workflows run at full speed, no matter the scale.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🔒</div>
-        <h3>Secure by Default</h3>
-        <p>Enterprise-grade security baked in. Your data stays yours — always encrypted, never shared.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🤝</div>
-        <h3>Built for Teams</h3>
-        <p>Real-time collaboration, role-based access, and audit logs designed for growing teams.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">📊</div>
-        <h3>Powerful Analytics</h3>
-        <p>Understand how your product is used with clear dashboards and actionable insights.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🔌</div>
-        <h3>150+ Integrations</h3>
-        <p>Connect the tools you already use — Slack, GitHub, Figma, Jira, and many more.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🌍</div>
-        <h3>Global Infrastructure</h3>
-        <p>Deployed across multiple regions so your users get sub-100ms response times worldwide.</p>
-      </div>
+<main class="content">
+  <section id="tab-future" class="tab-panel"></section>
+  <section id="tab-now" class="tab-panel" hidden></section>
+  <section id="tab-past" class="tab-panel" hidden></section>
+  <section id="tab-papers" class="tab-panel" hidden></section>
+  <section id="tab-calendar" class="tab-panel" hidden></section>
+</main>
+
+<!-- Modal -->
+<div id="modal" class="modal-overlay" hidden>
+  <div class="modal">
+    <h2 id="modal-title" data-i18n="modal.addTitle">Новая запись</h2>
+    <div id="modal-form" class="modal-form"></div>
+    <div class="modal-buttons">
+      <button id="modalSave" class="btn btn-primary" data-i18n="btn.save">Сохранить</button>
+      <button id="modalCancel" class="btn" data-i18n="btn.cancel">Отмена</button>
+      <button id="modalDelete" class="btn danger" data-i18n="btn.delete">Удалить</button>
     </div>
   </div>
-</section>
+</div>
 
-<!-- Stats -->
-<section style="padding: 4rem 1.25rem; background: #fff;">
-  <div class="container" style="text-align: center;">
-    <h2 style="font-size: 2rem; margin-bottom: 3rem;">Trusted by teams worldwide</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem;">
-      <div>
-        <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent);">12k+</div>
-        <div style="color: var(--muted); margin-top: 0.25rem;">Teams using Sergion</div>
-      </div>
-      <div>
-        <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent);">99.9%</div>
-        <div style="color: var(--muted); margin-top: 0.25rem;">Uptime SLA</div>
-      </div>
-      <div>
-        <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent);">4.9★</div>
-        <div style="color: var(--muted); margin-top: 0.25rem;">Average rating</div>
-      </div>
-      <div>
-        <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent);">&lt;2min</div>
-        <div style="color: var(--muted); margin-top: 0.25rem;">Time to first deploy</div>
-      </div>
+<!-- Sync panel -->
+<div id="syncPanel" class="modal-overlay" hidden>
+  <div class="modal">
+    <h2 data-i18n="sync.title">Синхронизация</h2>
+    <label class="m-field"><span data-i18n="sync.token">GitHub токен</span><input name="token" type="password" autocomplete="off"></label>
+    <p class="hint" data-i18n="sync.tokenHint">Подсказка по scope</p>
+    <label class="m-field"><span data-i18n="sync.gistId">Gist ID</span><input name="gistId" type="text"></label>
+    <div class="m-row">
+      <label class="m-field"><span data-i18n="sync.owner">Owner</span><input name="owner" type="text"></label>
+      <label class="m-field"><span data-i18n="sync.repo">Repo</span><input name="repo" type="text"></label>
+    </div>
+    <label class="m-check"><input name="auto" type="checkbox"> <span data-i18n="sync.auto">Автосинхронизация</span></label>
+    <div class="modal-buttons">
+      <button id="syncPush" class="btn" data-i18n="sync.push">Выгрузить ↑</button>
+      <button id="syncPull" class="btn" data-i18n="sync.pull">Загрузить ↓</button>
+      <button id="syncClose" class="btn" data-i18n="btn.close">Закрыть</button>
     </div>
   </div>
-</section>
+</div>
 
-<!-- CTA Banner -->
-<section class="cta-banner">
-  <h2>Ready to get started?</h2>
-  <p>Join thousands of teams who already ship better products with Sergion.</p>
-  <a href="contact.html" class="btn btn-white">Talk to us →</a>
-</section>
+<div id="toasts" class="toasts"></div>
 
-<footer>
-  <div class="footer-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <p>&copy; 2026 Sergion. All rights reserved.</p>
-</footer>
-
-<script src="js/main.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/store.js"></script>
+<script src="js/render.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/calendar.js"></script>
+<script src="js/import-helpers.js"></script>
+<script src="js/import-data.js"></script>
+<script src="js/import.js"></script>
+<script src="js/ics.js"></script>
+<script src="js/update.js"></script>
+<script src="js/sync.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
