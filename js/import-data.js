@@ -55,6 +55,7 @@ window.CT_IMPORT = {
     CT.study('NCT06195241', 'Effects of DaxibotulinumtoxinA for Blepharospasm and Hemifacial Spasm', 'recruiting', '2025-02-11', '2027-03', 'Montefiore Medical Center', 'PHASE4', ['Benign Essential Blepharospasm', 'Hemifacial Spasm'], 'https://clinicaltrials.gov/study/NCT06195241', '', [])
   ],
   papers: [
+    CT.paper('42327366', 'When pain becomes self: limbic-default mode network hyperconnectivity predicts microvascular decompression failure in trigeminal neuralgia.', 'Wang Y, Cao C, Chen H, Wu M, He X, Jiang X', 'Brain communications', '2026', '10.1093/braincomms/fcag220', '', '', ['MVD']),
     CT.paper('42320903', 'Orofacial pain beyond trigeminal neuralgia.', 'Renton T', 'Practical neurology', '2026', '10.1136/pn-2026-005154', '', '', ['MVD']),
     CT.paper('42320057', 'Clinical efficacy analysis of percutaneous balloon compression in patients with trigeminal neuralgia.', 'Du Y, Wang Y, Guo W, Xi Z, Sun G, Qian T', 'Journal of neurosurgery', '2026', '10.3171/2026.1.JNS251877', '', '', ['MVD']),
     CT.paper('42319472', 'Nomogram prediction model for pain recurrence in patients with trigeminal neuralgia after microvascular decompression.', 'Sun T, He L, Huang Q, Wang W, Li N, Chen Y', 'Neurosurgical review', '2026', '10.1007/s10143-026-04368-w', '', '', ['MVD']),
@@ -1053,7 +1054,6 @@ window.CT_IMPORT = {
     CT.paper('39600432', 'Noninvasive pulsed radiofrequency for trigeminal neuralgia: Off the beaten path - Case series.', 'Mitra S, Upadhyay P, Singh J, Ahlawat P', 'Saudi journal of anaesthesia', '2024', '10.4103/sja.sja_208_24', '', '', ['MVD']),
     CT.paper('39598034', 'Clinical Efficacy of Two Different Low-Level Laser Therapies for the Treatment of Trigeminal Neuralgia: A Randomized, Placebo-Controlled Trial.', 'Karagözoğlu İ, Demirkol N, Parlar Öz Ö, Keçeci G, Çetin B, Özcan M', 'Journal of clinical medicine', '2024', '10.3390/jcm13226890', '', '', ['MVD']),
     CT.paper('39591255', 'Botulinum Toxin Type A for Trigeminal Neuralgia: A Comprehensive Literature Review.', 'Tereshko Y, Dal Bello S, Lettieri C, Belgrado E, Gigli GL, Merlino G', 'Toxins', '2024', '10.3390/toxins16110500', '', '', ['MVD']),
-    CT.paper('39589121', 'Evaluation of 2 Surgical Techniques-Transposition Versus Interposition Microvascular Decompression for Hemifacial Spasm: A Systematic Review of 19 437 Patients.', 'Tugend M, Joncas CT, Lee V, Simmons GB, Sekula RF Jr', 'Neurosurgery', '2024', '10.1227/neu.0000000000003290', '', '', ['MVD']),
-    CT.paper('39586435', 'Harnessing polysialic acid (PSA)-embedded exudate-absorbing hydrogel for on-demand trigeminal neuralgia treatment.', 'Gao JJ, Liang T, Wen SL, Feng RQ, Zheng Y, Chen SS', 'International journal of biological macromolecules', '2025', '10.1016/j.ijbiomac.2024.138035', '', '', ['MVD'])
+    CT.paper('39589121', 'Evaluation of 2 Surgical Techniques-Transposition Versus Interposition Microvascular Decompression for Hemifacial Spasm: A Systematic Review of 19 437 Patients.', 'Tugend M, Joncas CT, Lee V, Simmons GB, Sekula RF Jr', 'Neurosurgery', '2024', '10.1227/neu.0000000000003290', '', '', ['MVD'])
   ]
 };
