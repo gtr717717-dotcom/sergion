@@ -52,6 +52,8 @@ window.CT_IMPORT = {
     CT.study('NCT06949436', 'Ultra-Early Gamma Knife Stereotactic Radiosurgery for TN', 'recruiting', '2025-07-30', '2032-05-01', 'University of Alberta', 'PHASE2', ['Trigeminal Neuralgia (TN)'], 'https://clinicaltrials.gov/study/NCT06949436', '', [])
   ],
   papers: [
+    CT.paper('42568611', 'Irreversible Brainstem Atrophy After Fibrin-Sealant Hypersensitivity: A Neurorehabilitation Perspective: A Case Report.', 'Oh Y, Park JM, Kim YW', 'Brain & NeuroRehabilitation', '2026', '10.12786/bn.2026.19.e11', '', '', ['MVD']),
+    CT.paper('42568178', 'Endoscopic vs microscopic microvascular decompression for trigeminal neuralgia: a systematic review and meta-analysis.', 'Vijay Kumar V, Imran MM, Bajaj J, Kaliaperumal C', 'British journal of neurosurgery', '2026', '10.1080/02688697.2026.2708674', '', '', ['MVD']),
     CT.paper('42566723', 'Pearls & Oy-sters: Bilateral Neuropathic Facial Pain With Autonomic Features and Neurovascular Contact.', 'Ni V, Nedd KM', 'Neurology', '2026', '10.1212/WNL.0000000000218446', '', '', ['MVD']),
     CT.paper('42565689', '[Vascular decompression in the treatment of vagoglossopharyngeal neuralgia].', 'Grigoryan GY, Usachev DY, Grigoryan YA', 'Zhurnal voprosy neirokhirurgii imeni N. N. Burdenko', '2026', '10.17116/neiro20269004115', '', '', ['MVD']),
     CT.paper('42565075', 'Microvascular Decompression for Trigeminal Neuralgia Due to Venous Neurovascular Conflict: A Case Report Featuring a 2D Operative Video.', 'Braga TKK, Ferreira Neto ODC, Pongeluppi RI, Santos MV, Ballestero MFM, Santos de Oliveira R', 'Cureus', '2026', '10.7759/cureus.112214', '', '', ['MVD']),
@@ -1049,8 +1051,6 @@ window.CT_IMPORT = {
     CT.paper('39801528', 'Navigating the neurovascular maze of trigeminal neuralgia.', 'Nimodia D, Parihar PH, Dudhe S, Patil R, Bhangale PN, Kotla R', 'Radiology case reports', '2025', '10.1016/j.radcr.2024.11.054', '', '', ['MVD']),
     CT.paper('39801102', 'Therapeutic potential of trazodone in trigeminal neuralgia based on inflammation and oxidative stress: an in vitro experimental study.', 'Yang J, Huang J, Pan Z, Wang X', 'Journal of oral & facial pain and headache', '2024', '10.22514/jofph.2024.020', '', '', ['MVD']),
     CT.paper('39800569', 'Trigeminal neuralgia: therapeutic strategies to restore quality of life.', 'Villegas Díaz D, Guerrero Alvarado G, López Medina A, Gómez Clavel JF, García Muñoz A', 'Journal of oral & facial pain and headache', '2024', '10.22514/jofph.2024.024', '', '', ['MVD']),
-    CT.paper('39800568', 'Autonomic features of craniofacial neuralgias: a systematic review with meta-analysis.', 'Thomas DC, Kodaganallur Pitchumani P, Barmak AB, Talluri S, Jiang W', 'Journal of oral & facial pain and headache', '2024', '10.22514/jofph.2024.023', '', '', ['MVD']),
-    CT.paper('39794712', 'Microvascular decompression: a contemporary update.', 'Okon II, Menon SS, Osama M, Aiman M, Paleare LFF, Eliseo DL 3rd', 'BMC surgery', '2025', '10.1186/s12893-025-02762-7', '', '', ['MVD']),
-    CT.paper('39793026', 'Letter to the Editor. Is autologous muscle better than Teflon in MVD for trigeminal neuralgia?', 'Zhang Z, Hao Q, Zheng W, Liu R', 'Journal of neurosurgery', '2025', '10.3171/2024.9.JNS242271', '', '', ['MVD'])
+    CT.paper('39800568', 'Autonomic features of craniofacial neuralgias: a systematic review with meta-analysis.', 'Thomas DC, Kodaganallur Pitchumani P, Barmak AB, Talluri S, Jiang W', 'Journal of oral & facial pain and headache', '2024', '10.22514/jofph.2024.023', '', '', ['MVD'])
   ]
 };
