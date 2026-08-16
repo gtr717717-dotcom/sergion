@@ -52,6 +52,7 @@ window.CT_IMPORT = {
     CT.study('NCT05677243', 'Observational Study on the Treatment of Trigeminal Neuralgia by Radiosurgery', 'recruiting', '2021-12-15', '2036-12', 'Centre Hospitalier Princesse Grace', '', ['Trigeminal Neuralgia'], 'https://clinicaltrials.gov/study/NCT05677243', '', [])
   ],
   papers: [
+    CT.paper('42601888', 'Trigger zones in trigeminal neuralgia: clinical features, pathophysiological mechanisms, and therapeutic strategies.', 'Li X, Liu H', 'Frontiers in neurology', '2026', '10.3389/fneur.2026.1838454', '', '', ['MVD']),
     CT.paper('42592144', 'Granisetron for Postoperative Nausea and Vomiting Prophylaxis in Microvascular Decompression Despite Prominent Non-serotonergic Emetic Pathways.', 'Oishi H, Kato T, Hagiwara N, Hasegawa T', 'Cureus', '2026', '10.7759/cureus.112568', '', '', ['MVD']),
     CT.paper('42589890', 'Treatment of Typical and Atypical Trigeminal Neuralgia with LINAC-Based Radiosurgery: Complications, Recurrence Rates and Long-Term Treatment Outcomes.', 'López-Vicente M, Cordero-Tous N, Sánchez-Corral C, Osorio-Ceballos JL, Zurita-Herrera M, Martínez-Barbero JP', 'Journal of clinical medicine', '2026', '10.3390/jcm15155786', '', '', ['MVD']),
     CT.paper('42584722', 'Evaluation of corneal subbasal nerve plexus as a predictor of radiosurgery outcome in trigeminal neuralgia.', 'Almas F, Düzkalir AH, Yildirim DC, Askeroglu MO, Yildiz A, Guleser UY', 'Neurosurgical review', '2026', '10.1007/s10143-026-04445-0', '', '', ['MVD']),
@@ -1050,7 +1051,6 @@ window.CT_IMPORT = {
     CT.paper('39833077', 'Surgical treatment of cerebellar pontine angle lipoma combined with trigeminal neuralgia: A case report.', 'Yin YT, Gui C', 'Medicine', '2025', '10.1097/MD.0000000000041295', '', '', ['MVD']),
     CT.paper('39830582', 'Optimal Patient Positioning for Microvascular Decompression of Trigeminal Neuralgia Utilizing the "Arrowhead" Technique: A Technical Report.', 'Rice-Canetto TE, Reier L, Arshad M, Schiraldi M, Siddiqi J', 'Cureus', '2024', '10.7759/cureus.75966', '', '', ['MVD']),
     CT.paper('39830530', 'The Impact of Microvascular Decompression on Pain Management in Trigeminal Neuralgia: Clinical Insights.', 'Sulaiman II, Abduljabbar Omar A, Hussein Hameed S', 'Cureus', '2024', '10.7759/cureus.75987', '', '', ['MVD']),
-    CT.paper('39825145', 'Role of stereotactic radiosurgery for intracranial epidermoid tumors: a systematic review to assess its safety, efficacy, and complication profile.', 'Verma O, Mishra S, Tripathi M, Sheehan JP', 'Journal of neuro-oncology', '2025', '10.1007/s11060-024-04901-1', '', '', ['MVD']),
-    CT.paper('39823586', 'Letter to the Editor. Trigeminal nerve morphology and trigeminal neuralgia.', 'Ramesh VG', 'Journal of neurosurgery', '2025', '10.3171/2024.10.JNS242548', '', '', ['MVD'])
+    CT.paper('39825145', 'Role of stereotactic radiosurgery for intracranial epidermoid tumors: a systematic review to assess its safety, efficacy, and complication profile.', 'Verma O, Mishra S, Tripathi M, Sheehan JP', 'Journal of neuro-oncology', '2025', '10.1007/s11060-024-04901-1', '', '', ['MVD'])
   ]
 };
