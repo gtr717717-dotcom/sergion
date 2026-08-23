@@ -52,6 +52,7 @@ window.CT_IMPORT = {
     CT.study('NCT05217628', 'An Efficacy and Safety Study of Basimglurant (NOE-101) in Patients With Trigeminal Neuralgia.', 'recruiting', '2022-01-11', '2027-04-24', 'Noema Pharma AG', 'PHASE2/PHASE3', ['Trigeminal Neuralgia'], 'https://clinicaltrials.gov/study/NCT05217628', '', [])
   ],
   papers: [
+    CT.paper('42631603', 'Readability and Quality of Large Language Model Patient Education for Trigeminal Neuralgia: A Cross-Sectional Study.', 'Wei H, Sun S, Liu M, Jin Y', 'Journal of visualized experiments : JoVE', '2026', '10.3791/70833', '', '', ['MVD']),
     CT.paper('42626727', 'Surgical Management of Trigeminal Neuralgia Emerging in the Long-Term after Cerebellopontine Angle Tumor Surgery without Tumor Regrowth.', 'Matsushima K, Matsunaga K, Ichimasu N, Nakajima N, Kohno M', 'Journal of neurological surgery. Part B, Skull base', '2026', '10.1055/a-2706-1672', '', '', ['MVD']),
     CT.paper('42624365', 'Hybrid Microvascular Decompression For Cranial Neurovascular Compression Syndromes: A Retrospective Case Series and Surgical Nuances.', 'Donofrio CA, Riccio L, Servadei F, Tubbs RS, Fioravanti A', 'World neurosurgery', '2026', '10.1016/j.wneu.2026.125268', '', '', ['MVD']),
     CT.paper('42623791', 'Preliminary development of a nomogram for predicting recurrence after microvascular decompression in hemifacial spasm: integrating quantitative lateral spread response parameters and clinical features.', 'Chen Y, Zhao J, Zheng Y, Liu K, Xu Z, Jia F', 'Journal of clinical neuroscience : official journal of the Neurosurgical Society of Australasia', '2026', '10.1016/j.jocn.2026.112245', '', '', ['MVD']),
@@ -1050,7 +1051,6 @@ window.CT_IMPORT = {
     CT.paper('39863124', 'Any news on the pharmacological treatment of trigeminal neuralgia?', 'Alcántara Montero A, Álamo González C', 'Revista espanola de anestesiologia y reanimacion', '2025', '10.1016/j.redare.2025.501668', '', '', ['MVD']),
     CT.paper('39860534', 'Pathogenesis, Diagnosis, and Management of Trigeminal Neuralgia: A Narrative Review.', 'Liu Y, Tanaka E', 'Journal of clinical medicine', '2025', '10.3390/jcm14020528', '', '', ['MVD']),
     CT.paper('39860486', 'Preventive Effects of Botulinum Neurotoxin Long-Term Therapy: Comparison of the \'Experienced\' Benefits and \'Suspected\' Worsening Across Disease Entities.', 'Hefter H, Samadzadeh S', 'Journal of clinical medicine', '2025', '10.3390/jcm14020480', '', '', ['MVD']),
-    CT.paper('39847207', 'Nervus Intermedius Neuralgia.', 'Robblee J', 'Current pain and headache reports', '2025', '10.1007/s11916-024-01335-2', '', '', ['MVD']),
-    CT.paper('39841405', 'Correlations between the blink reflex and magnetic resonance imaging in patients with trigeminal neuralgia.', 'Biçimveren MS, Karadaş Ö, Cüce F', 'Acta neurologica Belgica', '2025', '10.1007/s13760-025-02729-8', '', '', ['MVD'])
+    CT.paper('39847207', 'Nervus Intermedius Neuralgia.', 'Robblee J', 'Current pain and headache reports', '2025', '10.1007/s11916-024-01335-2', '', '', ['MVD'])
   ]
 };
