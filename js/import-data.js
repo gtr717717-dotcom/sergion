@@ -52,6 +52,7 @@ window.CT_IMPORT = {
     CT.study('NCT02910323', 'The Will Erwin Headache Research Center - Cluster Headache Study', 'recruiting', '2016-07-12', '2035-12', 'The University of Texas Health Science Center, Houston', '', ['Cluster Headache', 'Cluster Headaches and Other Trigeminal Autonomic Cephalgias', 'Paroxysmal Hemicrania'], 'https://clinicaltrials.gov/study/NCT02910323', '', [])
   ],
   papers: [
+    CT.paper('42704913', 'Endovascular transverse sinus stenting for pressure-dependent trigeminal neuralgia: illustrative case.', 'Rahmanov S, Rahmanova E, Adada B, Obrzut M, Borghei-Razavi H', 'Journal of neurosurgery. Case lessons', '2026', '10.3171/CASE26456', '', '', ['MVD']),
     CT.paper('42702634', 'Etiological analysis and reoperative strategies for recurrent or failed hemifacial spasm after microvascular decompression.', 'Chong Y, Yan Z, Jiang C, Xu W, Liang W, Wang J', 'Neurosurgical review', '2026', '10.1007/s10143-026-04477-6', '', '', ['MVD']),
     CT.paper('42700130', 'Microvascular Decompression with Selective Use of MVD-Plus for Classical Trigeminal Neuralgia: Outcomes, Predictors, and Role in Redo Surgery.', 'Prasad H, Chauhan SS, Agrawal M, Sharma RK, Janu V, Gosal JS', 'Neurology India', '2026', '10.4103/neurol-india.Neurol-India-D-26-00145', '', '', ['MVD']),
     CT.paper('42695034', 'Cyberknife radiosurgery for hemifacial spasm.', 'Hamdi H, Gheit I, Al-Malt AM, Shoeir S, Nasr A, Taher A', 'Surgical neurology international', '2026', '10.25259/SNI_149_2026', '', '', ['MVD']),
@@ -1050,7 +1051,6 @@ window.CT_IMPORT = {
     CT.paper('39966338', 'Hippocampal Subfield Abnormalities in Patients With Primary Trigeminal Neuralgia.', 'Filimonova E, Pashkov A, Moysak G, Martirosyan A, Rzaev J', 'Journal of neuroimaging : official journal of the American Society of Neuroimaging', '2025', '10.1111/jon.70026', '', '', ['MVD']),
     CT.paper('39960652', 'Stereotactic radiosurgery for arteriovenous malformations presenting as secondary trigeminal neuralgia: a case series.', 'Düzkalir AH, Askeroglu MO, Peker S', 'Neurosurgical review', '2025', '10.1007/s10143-025-03400-9', '', '', ['MVD']),
     CT.paper('39960553', 'Gamma knife radiosurgery for benign tumor-related trigeminal neuralgia: a single-institution retrospective study.', 'Nguyen BT, Huynh CT, Nguyen TM, Nguyen VT, Karras CL, Tran HM', 'Neurosurgical review', '2025', '10.1007/s10143-025-03399-z', '', '', ['MVD']),
-    CT.paper('39959895', 'A Reliable Closure Technique for Retromastoid Craniotomy to Avoid Cerebrospinal Fluid Leaks and Meningitis.', 'Barkhoudarian G, Garling RJ, Mallari RJ, Sivakumar W, Kelly DF', 'Neurosurgery practice', '2024', '10.1227/neuprac.0000000000000086', '', '', ['MVD']),
-    CT.paper('39958490', 'Trigeminal Neuralgia with Persistent Trigeminal Artery Variant and Schwannomatosis of the Abducens and Lower Cranial Nerves: A Case Report.', 'Kim SG, Choi HJ, Cho KG, Kim JY, Kim SH', 'Journal of the Korean Society of Radiology', '2025', '10.3348/jksr.2024.0088', '', '', ['MVD'])
+    CT.paper('39959895', 'A Reliable Closure Technique for Retromastoid Craniotomy to Avoid Cerebrospinal Fluid Leaks and Meningitis.', 'Barkhoudarian G, Garling RJ, Mallari RJ, Sivakumar W, Kelly DF', 'Neurosurgery practice', '2024', '10.1227/neuprac.0000000000000086', '', '', ['MVD'])
   ]
 };
