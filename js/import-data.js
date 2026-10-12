@@ -51,6 +51,7 @@ window.CT_IMPORT = {
     CT.study('NCT06779578', 'Fluoroscopic-Guided Bipolar Versus Monopolar Pulsed Radiofrequency for Refractory Trigeminal Neuralgia', 'recruiting', '2024-01-01', '2025-09-01', 'Alexandria University', 'NA', ['Trigeminal Neuralgia', 'Refractory Pain'], 'https://clinicaltrials.gov/study/NCT06779578', '', [])
   ],
   papers: [
+    CT.paper('42861001', 'Trigeminal neuralgia management: What are patients saying?', 'Grafton P, Lew K, Ranalli C, Sharma K, DiMarzio M, Pilitsis JG', 'British journal of pain', '2026', '10.1177/20494637261496487', '', '', ['MVD']),
     CT.paper('42859649', 'Tumor-Related Trigeminal Neuralgia: Clinical Features, Pathophysiology, and the Contemporary Role of Radiosurgery in Tumor Control and Pain Relief.', 'Rodriguez Santos JA, De Alas J, Lovo EE', 'Cureus', '2026', '10.7759/cureus.116049', '', '', ['MVD']),
     CT.paper('42857847', 'Staged Bilateral Microvascular Decompression for Bilateral Hemifacial Spasm.', 'Hachiya K, Nagashima Y, Nishimura Y, Kato H, Sunohara Y, Terao K', 'Asian journal of neurosurgery', '2026', '10.1055/s-0046-1822646', '', '', ['MVD']),
     CT.paper('42855708', 'Probable vestibular paroxysmia mimicking benign paroxysmal positional vertigo of the superior semicircular canal in the presence of a neurovascular conflict: a case report and review of the literature.', 'Legois Q, Tremelet L, Nieto P, Ismail S, Makhoul M, Molinier CE', 'Journal of medical case reports', '2026', '10.1186/s13256-026-06552-4', '', '', ['MVD']),
@@ -1049,7 +1050,6 @@ window.CT_IMPORT = {
     CT.paper('40133557', 'Endoscopic microvascular decompression for primary trigeminal neuralgia: surgical experience and early outcomes.', 'Feng B, Chai X, Yu Y, Xia H, Wu J, Ren Y', 'Scientific reports', '2025', '10.1038/s41598-025-94797-2', '', '', ['MVD']),
     CT.paper('40129820', 'Cerebellopontine angle epidermoid cyst masquerading as trigeminal neuralgia: A rare presentation and surgical outcome.', 'Bhangale P, Kashikar S, Parihar PH, Patil R, Dudhe S, Kumari A', 'Radiology case reports', '2025', '10.1016/j.radcr.2025.01.076', '', '', ['MVD']),
     CT.paper('40129804', 'Intracranial extension of parotid adenoid cystic carcinoma presenting as trigeminal neuralgia: A case report.', 'Hassouneh A, Sawafta O, Jaber O, Ali AA, Rahhal MO, Sawaftah Z', 'Radiology case reports', '2025', '10.1016/j.radcr.2025.02.049', '', '', ['MVD']),
-    CT.paper('40129492', 'Amplitude of low-frequency fluctuations in classical trigeminal neuralgia patients with purely paroxysmal and concomitant continuous pain.', 'Zhao H, Xie S, Ma X, Bai X, Song Y, Wu Q', 'Frontiers in pain research (Lausanne, Switzerland)', '2025', '10.3389/fpain.2025.1523845', '', '', ['MVD']),
-    CT.paper('40129433', 'A study of brain function changes in patients with trigeminal neuralgia of different laterality based on rs-fMRI.', 'Li L, Du H, Li XY, Yu CM, Huang BB, Ma ZT', 'Journal of oral & facial pain and headache', '2025', '10.22514/jofph.2025.015', '', '', ['MVD'])
+    CT.paper('40129492', 'Amplitude of low-frequency fluctuations in classical trigeminal neuralgia patients with purely paroxysmal and concomitant continuous pain.', 'Zhao H, Xie S, Ma X, Bai X, Song Y, Wu Q', 'Frontiers in pain research (Lausanne, Switzerland)', '2025', '10.3389/fpain.2025.1523845', '', '', ['MVD'])
   ]
 };
