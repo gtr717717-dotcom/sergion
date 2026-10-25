@@ -51,6 +51,7 @@ window.CT_IMPORT = {
     CT.study('NCT04579692', 'MR Guided Focused Ultrasound (FUS) for the Treatment of Trigeminal Neuralgia', 'recruiting', '2021-08-16', '2026-12-31', 'University of Maryland, Baltimore', 'NA', ['Trigeminal Neuralgia'], 'https://clinicaltrials.gov/study/NCT04579692', '', [])
   ],
   papers: [
+    CT.paper('42925839', 'Pain mechanisms in trigeminal neuralgia: From peripheral pathology to brain network reorganization and neurosurgical implications.', 'Serhiienko YH, Nekrasova NO, Piatykop VO, Yu Kaliuzhka V', 'Journal of clinical neuroscience : official journal of the Neurosurgical Society of Australasia', '2026', '10.1016/j.jocn.2026.112370', '', '', ['MVD']),
     CT.paper('42920457', 'Corneal Confocal Microscopy (CCM) in Patients With Central Neurodegenerative Disease.', 'Malik A, Ferdousi M, Azmi S, Malik RA', 'Cureus', '2026', '10.7759/cureus.116756', '', '', ['MVD']),
     CT.paper('42918931', 'Effect of Esketamine Pretreatment on Necroptosis in Mice with Trigeminal Neuralgia and Anxiety-Like Behavior via the RIP1/RIP3/MLKL Pathway.', 'Dong R, Tian Y, Zhao C, Liu J, Liu X, Li Z', 'Cellular and molecular neurobiology', '2026', '10.1007/s10571-026-01782-y', '', '', ['MVD']),
     CT.paper('42910297', 'Acute-on-Chronic Carbamazepine Overdose: A Toxicology Simulation Case for Fourth-Year Medical Students.', 'Leung L, Senthil K, Kothmann J, Bui J, Nguyen D, Nzamba C', 'MedEdPORTAL : the journal of teaching and learning resources', '2026', '10.15766/mep_2374-8265.11640', '', '', ['MVD']),
@@ -1049,7 +1050,6 @@ window.CT_IMPORT = {
     CT.paper('40204819', 'Personality traits and their effects in patients with hemifacial spasm.', 'Lee JA, Han YK, Jung WJ, Lee BH, Lee S', 'Scientific reports', '2025', '10.1038/s41598-025-97368-7', '', '', ['MVD']),
     CT.paper('40201021', 'Impact of offending vessel location on lateral spread response variations in hemifacial spasm patients.', 'Ding F, Li P, Zuo X, Xiao Y, Wang D, Liu Y', 'Frontiers in neurology', '2025', '10.3389/fneur.2025.1561134', '', '', ['MVD']),
     CT.paper('40197167', 'Associations between personality traits and pain experiences in trigeminal neuralgia.', 'Lee JA, Han YK, Jung WJ, Lee BH, Lee S', 'The journal of headache and pain', '2025', '10.1186/s10194-025-02010-6', '', '', ['MVD']),
-    CT.paper('40195053', 'Causal Relationship Between Circulating Inflammatory Cytokines and the Risk of Trigeminal Neuralgia: A Mendelian Randomization Study.', 'Shang H, Liu X, Bai M, Li X, Lan Y, Bai B', 'Brain and behavior', '2025', '10.1002/brb3.70463', '', '', ['MVD']),
-    CT.paper('40189602', 'Elucidating molecular lipid perturbations in trigeminal neuralgia using cerebrospinal fluid lipidomics.', 'Xu D, Dai X, He Q, Mei Z, Zhou Y, Zhao J', 'Scientific reports', '2025', '10.1038/s41598-025-89755-x', '', '', ['MVD'])
+    CT.paper('40195053', 'Causal Relationship Between Circulating Inflammatory Cytokines and the Risk of Trigeminal Neuralgia: A Mendelian Randomization Study.', 'Shang H, Liu X, Bai M, Li X, Lan Y, Bai B', 'Brain and behavior', '2025', '10.1002/brb3.70463', '', '', ['MVD'])
   ]
 };
