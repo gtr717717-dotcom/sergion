@@ -51,6 +51,7 @@ window.CT_IMPORT = {
     CT.study('NCT07252453', 'Comparison b/w Carbamazepine vs Oxcarbazepine in Treatment of Trigeminal Neuralgia', 'recruiting', '2025-05-20', '2025-12-01', 'Abbasi Shaheed Hospital', 'NA', ['Trigeminal Neuralgia'], 'https://clinicaltrials.gov/study/NCT07252453', '', [])
   ],
   papers: [
+    CT.paper('42931519', 'The Stomatognathic System as an Expanding Frontier for Botulinum Toxin Therapy.', 'Yoshida K', 'Toxins', '2026', '10.3390/toxins18100428', '', '', ['MVD']),
     CT.paper('42928778', 'Beyond online sentiment: Clinical phenotype and treatment trajectory in trigeminal neuralgia decision-making.', 'Alcántara Montero A', 'British journal of pain', '2026', '10.1177/20494637261502878', '', '', ['MVD']),
     CT.paper('42925839', 'Pain mechanisms in trigeminal neuralgia: From peripheral pathology to brain network reorganization and neurosurgical implications.', 'Serhiienko YH, Nekrasova NO, Piatykop VO, Yu Kaliuzhka V', 'Journal of clinical neuroscience : official journal of the Neurosurgical Society of Australasia', '2026', '10.1016/j.jocn.2026.112370', '', '', ['MVD']),
     CT.paper('42920457', 'Corneal Confocal Microscopy (CCM) in Patients With Central Neurodegenerative Disease.', 'Malik A, Ferdousi M, Azmi S, Malik RA', 'Cureus', '2026', '10.7759/cureus.116756', '', '', ['MVD']),
@@ -1049,7 +1050,6 @@ window.CT_IMPORT = {
     CT.paper('40215585', 'Ephatic transmission impairs trigemino-cervical reflex monitoring during microvascular decompression surgery for hemifacial spasm.', 'de Melo DLM, Bento Oliveira DRDCA, Pinheiro DS, Manzano GM', 'Clinical neurophysiology : official journal of the International Federation of Clinical Neurophysiology', '2025', '10.1016/j.clinph.2025.03.039', '', '', ['MVD']),
     CT.paper('40209522', 'Analysis of the effects of combined electrical spinal cord stimulation and pregabalin therapy in patients with herpes zoster trigeminal neuralgia.', 'Jiang C, Xu X, Guan S, Chen L, Chen R, Cai X', 'Journal of clinical neuroscience : official journal of the Neurosurgical Society of Australasia', '2025', '10.1016/j.jocn.2025.111224', '', '', ['MVD']),
     CT.paper('40204819', 'Personality traits and their effects in patients with hemifacial spasm.', 'Lee JA, Han YK, Jung WJ, Lee BH, Lee S', 'Scientific reports', '2025', '10.1038/s41598-025-97368-7', '', '', ['MVD']),
-    CT.paper('40201021', 'Impact of offending vessel location on lateral spread response variations in hemifacial spasm patients.', 'Ding F, Li P, Zuo X, Xiao Y, Wang D, Liu Y', 'Frontiers in neurology', '2025', '10.3389/fneur.2025.1561134', '', '', ['MVD']),
-    CT.paper('40197167', 'Associations between personality traits and pain experiences in trigeminal neuralgia.', 'Lee JA, Han YK, Jung WJ, Lee BH, Lee S', 'The journal of headache and pain', '2025', '10.1186/s10194-025-02010-6', '', '', ['MVD'])
+    CT.paper('40201021', 'Impact of offending vessel location on lateral spread response variations in hemifacial spasm patients.', 'Ding F, Li P, Zuo X, Xiao Y, Wang D, Liu Y', 'Frontiers in neurology', '2025', '10.3389/fneur.2025.1561134', '', '', ['MVD'])
   ]
 };
