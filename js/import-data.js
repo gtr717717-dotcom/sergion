@@ -52,6 +52,7 @@ window.CT_IMPORT = {
     CT.study('NCT06490237', 'Coding of Speech Signals in the Human Auditory Nerve', 'recruiting', '2021-12-07', '2027-06-07', 'CHU de Reims', 'NA', ['Hearing Loss'], 'https://clinicaltrials.gov/study/NCT06490237', '', [])
   ],
   papers: [
+    CT.paper('42991208', 'Cerebellar lobular morphometry in trigeminal neuralgia: cross-sectional and exploratory postoperative analyses.', 'Li H, Chen J, Wang X, She J, Gao W, Wu T', 'Frontiers in neurology', '2026', '10.3389/fneur.2026.1964745', '', '', ['MVD']),
     CT.paper('42988919', 'Bilateral trigeminal neuralgia relief following unilateral surgical intervention.', 'Mei Z, Wu S, Gao J, Zhou Y, Wu J, Zhao J', 'Neurosurgical review', '2026', '10.1007/s10143-026-04497-2', '', '', ['MVD']),
     CT.paper('42979417', 'Extreme Lateral Supracerebellar Infratentorial Approach for Petroclival Meningioma with an Ophthalmic Artery Originating from the Middle Meningeal Artery: Illustrative Case.', 'Tomikawa K, Hiraishi T, Okada T, Yoshida S, Mitsuhashi D, Ogura R', 'NMC case report journal', '2026', '10.2176/jns-nmc.2026-0181', '', '', ['MVD']),
     CT.paper('42977249', 'Quantitative Morphological Analysis of the Trigeminal Nerve in Trigeminal Neuralgia Caused Solely by Venous Compression.', 'Takei T, Tanaka Y, Onogi S, Nakajima Y, Kaneoka A, Arai Y', 'World neurosurgery', '2026', '10.1016/j.wneu.2026.125477', '', '', ['MVD']),
@@ -1050,7 +1051,6 @@ window.CT_IMPORT = {
     CT.paper('40279712', 'Letter to the Editor. Considerations for refractory trigeminal neuralgia after MVD.', 'Joncas CT, McKhann GM, Sekula RF', 'Journal of neurosurgery', '2025', '10.3171/2024.12.JNS243196', '', '', ['MVD']),
     CT.paper('40278671', 'A 12-Week Prospective, Double-Blind, Multicenter, Randomized Study Comparing 100 Units of Abobotulinum Toxin Type A (Dysport(®)) and 33.33 Units of Neubotulinum Toxin Type A (Neuronox(®)) for the Treatment of Hemifacial Spasm.', 'Kongsaengdao S, Arayawichanont A, Samintharapanya K, Rojanapitayakorn P, Maneeton B, Maneeton N', 'Toxins', '2025', '10.3390/toxins17040173', '', '', ['MVD']),
     CT.paper('40277371', 'Outcomes After Repeat-Percutaneous Balloon Compression for Recurrent Trigeminal Facial Pain.', 'Straus S, Khalifeh K, Saripella M, Stone L, Aho M, O\'Connor K', 'Neurosurgery', '2025', '10.1227/neu.0000000000003462', '', '', ['MVD']),
-    CT.paper('40272603', 'Cerebrospinal fluid leakage in patients after retrosigmoid approach for tumor resection: systematic review of techniques to manage dural closure and cranial reconstruction.', 'Auricchio AM, Offi M, Olivi A, Della Pepa GM', 'Neurosurgical review', '2025', '10.1007/s10143-025-03537-7', '', '', ['MVD']),
-    CT.paper('40264602', 'Gyroscopic Radiosurgery for the Treatment of Trigeminal Neuralgia.', 'Sallabanda M, Sallabanda K', 'Cureus', '2025', '10.7759/cureus.81011', '', '', ['MVD'])
+    CT.paper('40272603', 'Cerebrospinal fluid leakage in patients after retrosigmoid approach for tumor resection: systematic review of techniques to manage dural closure and cranial reconstruction.', 'Auricchio AM, Offi M, Olivi A, Della Pepa GM', 'Neurosurgical review', '2025', '10.1007/s10143-025-03537-7', '', '', ['MVD'])
   ]
 };
