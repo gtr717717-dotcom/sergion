@@ -52,6 +52,7 @@ window.CT_IMPORT = {
     CT.study('NCT06849219', 'Comparison of Oxcarbazepine Versus Carbamazepine in the Management of Trigeminal Neuralgia', 'recruiting', '2024-09-21', '2025-03-21', 'Jinnah Postgraduate Medical Centre', 'PHASE4', ['Trigeminal Neuralgia'], 'https://clinicaltrials.gov/study/NCT06849219', '', [])
   ],
   papers: [
+    CT.paper('43009011', 'Fully endoscopic microvascular decompression for trigeminal neuralgia accompanied by intraosseous subarcuate loops.', 'Xie Z, Xie C, Zhuang Y, Liu J', 'World neurosurgery', '2026', '10.1016/j.wneu.2026.125494', '', '', ['MVD']),
     CT.paper('42995518', 'Reproducible left anterior-superior hypothalamic enlargement in episodic migraine: evidence from two independent cohorts.', 'Liu D, Peng S, Yin L, Wen X, Huang B, Kendrick KM', 'The journal of headache and pain', '2026', '10.1186/s10194-026-02479-9', '', '', ['MVD']),
     CT.paper('42991208', 'Cerebellar lobular morphometry in trigeminal neuralgia: cross-sectional and exploratory postoperative analyses.', 'Li H, Chen J, Wang X, She J, Gao W, Wu T', 'Frontiers in neurology', '2026', '10.3389/fneur.2026.1964745', '', '', ['MVD']),
     CT.paper('42988919', 'Bilateral trigeminal neuralgia relief following unilateral surgical intervention.', 'Mei Z, Wu S, Gao J, Zhou Y, Wu J, Zhao J', 'Neurosurgical review', '2026', '10.1007/s10143-026-04497-2', '', '', ['MVD']),
@@ -1050,7 +1051,6 @@ window.CT_IMPORT = {
     CT.paper('40289308', 'Chronic Cough as the Presentation of Glossopharyngeal and Vagal Neuropathy.', 'Grimard O, Larivée P, Brisebois S, Bocti C', 'The Canadian journal of neurological sciences. Le journal canadien des sciences neurologiques', '2025', '10.1017/cjn.2025.68', '', '', ['MVD']),
     CT.paper('40283128', 'Dura Closure Tactics to Prevent CSF Leakage in Microvascular Decompression Surgery.', 'Lee HS, Park K', 'Life (Basel, Switzerland)', '2025', '10.3390/life15040574', '', '', ['MVD']),
     CT.paper('40279712', 'Letter to the Editor. Considerations for refractory trigeminal neuralgia after MVD.', 'Joncas CT, McKhann GM, Sekula RF', 'Journal of neurosurgery', '2025', '10.3171/2024.12.JNS243196', '', '', ['MVD']),
-    CT.paper('40278671', 'A 12-Week Prospective, Double-Blind, Multicenter, Randomized Study Comparing 100 Units of Abobotulinum Toxin Type A (Dysport(®)) and 33.33 Units of Neubotulinum Toxin Type A (Neuronox(®)) for the Treatment of Hemifacial Spasm.', 'Kongsaengdao S, Arayawichanont A, Samintharapanya K, Rojanapitayakorn P, Maneeton B, Maneeton N', 'Toxins', '2025', '10.3390/toxins17040173', '', '', ['MVD']),
-    CT.paper('40277371', 'Outcomes After Repeat-Percutaneous Balloon Compression for Recurrent Trigeminal Facial Pain.', 'Straus S, Khalifeh K, Saripella M, Stone L, Aho M, O\'Connor K', 'Neurosurgery', '2025', '10.1227/neu.0000000000003462', '', '', ['MVD'])
+    CT.paper('40278671', 'A 12-Week Prospective, Double-Blind, Multicenter, Randomized Study Comparing 100 Units of Abobotulinum Toxin Type A (Dysport(®)) and 33.33 Units of Neubotulinum Toxin Type A (Neuronox(®)) for the Treatment of Hemifacial Spasm.', 'Kongsaengdao S, Arayawichanont A, Samintharapanya K, Rojanapitayakorn P, Maneeton B, Maneeton N', 'Toxins', '2025', '10.3390/toxins17040173', '', '', ['MVD'])
   ]
 };
