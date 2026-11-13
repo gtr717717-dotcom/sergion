@@ -52,6 +52,7 @@ window.CT_IMPORT = {
     CT.study('NCT05451251', 'Deep Brain Stimulation for Refractory Trigeminal Neuralgia with a Pontine Lesion', 'recruiting', '2024-10-15', '2026-10', 'Université de Sherbrooke', 'PHASE1', ['Trigeminal Neuralgia'], 'https://clinicaltrials.gov/study/NCT05451251', '', [])
   ],
   papers: [
+    CT.paper('43021660', 'Glossopharyngeal neuralgia: a comprehensive single-center comparative study with trigeminal neuralgia.', 'Wolff Fernandes F, Pirayesh A, Krauss JK', 'Stereotactic and functional neurosurgery', '2026', '10.1159/sfn/aeuag017', '', '', ['MVD']),
     CT.paper('43014562', 'Anatomical and Electrophysiological Significance of Lateral Spread Response Waveform Complexity During Microvascular Decompression for Hemifacial Spasm.', 'Ding F, Xiao Y, Wang D, Geng L, Liu Y, Wang H', 'World neurosurgery', '2026', '10.1016/j.wneu.2026.125499', '', '', ['MVD']),
     CT.paper('43014395', 'A Rare Presentation of Pneumococcal Meningitis with Acute Bilateral Vision Loss: A Case Report.', 'Anderson A, Piszker A, Applebach E, Mitchell R, Jeng AY', 'Clinical practice and cases in emergency medicine', '2026', '10.5811/cpcem.63985', '', '', ['MVD']),
     CT.paper('43013779', 'Investigating pain‑specific sleep disturbances in 3 orofacial pain conditions: Trigeminal neuropathic pain, temporomandibular disorders and orofacial pain presentation of primary headaches.', 'Ravindranath PT, Smith JG, Elias LA, Renton T', 'Cranio : the journal of craniomandibular practice', '2026', '10.1080/08869634.2026.2755550', '', '', ['MVD']),
@@ -1050,7 +1051,6 @@ window.CT_IMPORT = {
     CT.paper('40304923', 'The Ganglia of the Head and Neck: Clinical Relevance for the Interventional Pain Physician.', 'Millhouse PW, Bloom RW, Beckstrand JN, McClure ML, Eckmann MS, Feeko KJ', 'Current pain and headache reports', '2025', '10.1007/s11916-025-01387-y', '', '', ['MVD']),
     CT.paper('40304736', 'Revisiting Härtel\'s technique for percutaneous transoval glycerol injection.', 'Slettebø H, Sakinis T', 'Acta neurochirurgica', '2025', '10.1007/s00701-025-06526-3', '', '', ['MVD']),
     CT.paper('40303899', 'Beyond coincidence: a case series on the clinical course of coinciding cluster headache and short-lasting unilateral neuralgiform headache attacks.', 'Jansen JJ, Scheurink J, Balvers T, Fronczek R, Mulleners WM', 'Pain reports', '2025', '10.1097/PR9.0000000000001271', '', '', ['MVD']),
-    CT.paper('40300884', 'Various gases for the treatment of neuropathic pain: mechanisms, current status, and future perspectives.', 'Liu Y, Shen T, Li Q, Yu X, Liu Y, Zhou C', 'Medical gas research', '2025', '10.4103/mgr.MEDGASRES-D-24-00161', '', '', ['MVD']),
-    CT.paper('40296931', 'Microvascular Decompression for Trigeminal Neuralgia Using Autologous Muscle Grafting: A Retrospective Analysis in a Resource-Limited Setting.', 'Alasta A, Al Naggar AM, Al-Saidy A, Al Wesabi F', 'Cureus', '2025', '10.7759/cureus.81362', '', '', ['MVD'])
+    CT.paper('40300884', 'Various gases for the treatment of neuropathic pain: mechanisms, current status, and future perspectives.', 'Liu Y, Shen T, Li Q, Yu X, Liu Y, Zhou C', 'Medical gas research', '2025', '10.4103/mgr.MEDGASRES-D-24-00161', '', '', ['MVD'])
   ]
 };
